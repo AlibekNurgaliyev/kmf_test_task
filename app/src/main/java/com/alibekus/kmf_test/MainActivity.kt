@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.alibekus.kmf_test.registration_activity.RegistrationActivity
+import com.alibekus.kmf_test.user_info.UserInfoActivity
 
 class MainActivity : AppCompatActivity() {
     private val registrationButton: Button by lazy {

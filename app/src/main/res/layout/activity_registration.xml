@@ -1,16 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistrationActivity">
+    tools:context=".registration_activity.RegistrationActivity"
+    android:orientation="vertical"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registration">
-    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/layout_spacing_8x"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/layout_spacing_16x"
+        android:background="@drawable/background_shape"
+        android:paddingHorizontal="@dimen/layout_spacing_8x"
+        android:paddingVertical="@dimen/layout_spacing_16x"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_registration_textview_registration"
+            android:textSize="@dimen/text_size_24x"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/layout_spacing_8x"
+            android:layout_gravity="center_horizontal"
+            />
 
+        <EditText
+            android:id="@+id/activity_registration_edit_text_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_spacing_8x"
+            android:hint="@string/activity_registration_edit_text_login"
+            android:textColorHint="@color/hint_black"
+            />
+
+        <EditText
+            android:id="@+id/activity_registration_edit_text_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_spacing_8x"
+            android:hint="@string/activity_registration_edit_text_first_name"
+            android:textColorHint="@color/hint_black"
+            />
+
+        <EditText
+            android:id="@+id/activity_registration_edit_text_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_spacing_8x"
+            android:hint="@string/activity_registration_edit_text_last_name"
+            android:textColorHint="@color/hint_black"
+            />
+
+        <EditText
+            android:id="@+id/activity_registration_edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_spacing_8x"
+            android:hint="@string/activity_registration_edit_text_email"
+            android:textColorHint="@color/hint_black"
+            />
+
+        <EditText
+            android:id="@+id/activity_registration_edit_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_spacing_8x"
+            android:hint="@string/activity_registration_edit_text_password"
+            android:textColorHint="@color/hint_black"
+            />
+
+        <EditText
+            android:id="@+id/activity_registration_edit_text_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_spacing_8x"
+            android:hint="@string/activity_registration_edit_text_phone_number"
+            android:textColorHint="@color/hint_black"
+            />
+
+        <Button
+            android:id="@+id/activity_registration_button_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/layout_spacing_16x"
+            android:enabled="false"
+            android:text="@string/activity_registration_button_submit"
+            android:textColorHint="@color/hint_black"
+            />
+
+    </LinearLayout>
 </LinearLayout>

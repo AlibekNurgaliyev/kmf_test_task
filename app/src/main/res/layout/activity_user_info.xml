@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserInfoActivity">
+    tools:context=".user_info.UserInfoActivity"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="UserInfo">
-</TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/layout_spacing_16x"
+        android:background="@drawable/background_shape"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/layout_spacing_8x"
+        android:paddingVertical="@dimen/layout_spacing_16x"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter username"
+            android:textColorHint="@color/hint_black"
+            />
+
+        <Button
+            android:id="@+id/activity_user_info_button_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            />
 
     </LinearLayout>
+</LinearLayout>

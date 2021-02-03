@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <!--    margin & padding-->
+    <dimen name="layout_spacing_8x">8dp</dimen>
+    <dimen name="layout_spacing_16x">16dp</dimen>
+    <!--    shapes-->
+    <dimen name="radius_15x">15dp</dimen>
+    <!--    text size-->
+    <dimen name="text_size_24x">24sp</dimen>
 </resources>
