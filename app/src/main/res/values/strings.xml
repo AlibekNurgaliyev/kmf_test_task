@@ -9,5 +9,17 @@
     <string name="activity_registration_edit_text_password">Password</string>
     <string name="activity_registration_edit_text_phone_number">Phone number</string>
     <string name="activity_registration_button_submit">Submit</string>
-    <string name="activity_registration_textview_registration">Registration</string>
+    <string name="activity_registration_text_view_registration">Registration</string>
+    <string name="activity_registration_button_status">Status</string>
+
+    <!--    activity_main-->
+    <string name="activity_main_button_registration">Registration</string>
+    <string name="activity_main_button_user_info">User Info</string>
+
+    <!-- bottom_sheet_dialog_fragment-->
+    <string name="bottom_sheet_dialog_fragment_1">1</string>
+    <string name="bottom_sheet_dialog_fragment_2">2</string>
+    <string name="bottom_sheet_dialog_fragment_3">3</string>
+    <string name="bottom_sheet_dialog_fragment_4">4</string>
+    <string name="bottom_sheet_dialog_fragment_5">5</string>
 </resources>

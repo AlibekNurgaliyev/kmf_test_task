@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.core.text.isDigitsOnly
 import com.alibekus.kmf_test.R
+import com.google.android.material.bottomsheet.BottomSheetDialog
 
 class RegistrationActivity : AppCompatActivity() {
     private lateinit var login: EditText
@@ -18,6 +19,7 @@ class RegistrationActivity : AppCompatActivity() {
     private lateinit var phoneNumber: EditText
 
     private lateinit var submitButton: Button
+    private lateinit var statusButton: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,9 +36,17 @@ class RegistrationActivity : AppCompatActivity() {
         password = findViewById(R.id.activity_registration_edit_text_password)
         phoneNumber = findViewById(R.id.activity_registration_edit_text_phone_number)
         submitButton = findViewById(R.id.activity_registration_button_submit)
+        statusButton = findViewById(R.id.activity_registration_button_status)
 
         phoneNumber.addTextChangedListener(phoneNumberTextWatcher)
         email.addTextChangedListener(emailTextWatcher)
+
+        statusButton.setOnClickListener {
+            val modalbottomSheetFragment = BottomSheetDialogFragment()
+            modalbottomSheetFragment.show(supportFragmentManager,modalbottomSheetFragment.tag)
+
+        }
+
     }
 
     private val phoneNumberTextWatcher = object : TextWatcher {

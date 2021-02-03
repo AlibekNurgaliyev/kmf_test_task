@@ -5,6 +5,7 @@
     <dimen name="layout_spacing_16x">16dp</dimen>
     <!--    shapes-->
     <dimen name="radius_15x">15dp</dimen>
+    <dimen name="main_button_150x">150dp</dimen>
     <!--    text size-->
     <dimen name="text_size_24x">24sp</dimen>
 </resources>

@@ -4,26 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="horizontal"
     tools:context=".MainActivity"
-    android:gravity="center"
     >
 
     <Button
         android:id="@+id/activity_main_button_registration"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/main_button_150x"
         android:layout_height="wrap_content"
-        android:text="Registration"
-        android:layout_margin="8dp">
+        android:layout_margin="8dp"
+        android:text="@string/activity_main_button_registration"
+        >
 
     </Button>
 
     <Button
         android:id="@+id/activity_main_button_user_info"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/main_button_150x"
         android:layout_height="wrap_content"
-        android:text="User Info"
-        android:layout_margin="8dp">
+        android:layout_margin="8dp"
+        android:text="@string/activity_main_button_user_info"
+        >
 
     </Button>
 
